@@ -1,0 +1,9 @@
+#
+# picoRTOS MODBUS RTU library
+#
+# How tu use:
+# -include /path/to/pico-modbus_rtu/Makefile.in
+#
+path    := $(dir $(lastword $(MAKEFILE_LIST)))
+c_src-y += $(path)/modbus_rtu.c
+
